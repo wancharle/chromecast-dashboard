@@ -37,6 +37,10 @@ window.onload = function() {
         $('#dashboard').attr('data-refresh', 0);
       }
     }
+
+    if (event.data['type'] == 'msg') {
+      enviaMensagem(event.data);
+    }
   }
 
   // Initialize the CastReceiverManager with an application status message.
@@ -72,7 +76,8 @@ function onMessage(event) {
 }
 
 function enviaMensagem(message) {
-    window.messageBus.broadcast(message);
+    var ifw = document.getElementById("dashboard")
+    ifw.contentWindow.postMessage(message,"*");
 }
 // Function to be called from iframe
 function parentFunc(message) {
