@@ -1,6 +1,6 @@
 # Description #
 
-A simple dashboard application for Chromecast. Display any web page accessible
+Aa simple dashboard application for Chromecast. Display any web page accessible
 by the Chromecast device.
 
 # Benefits #
