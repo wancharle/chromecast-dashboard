@@ -71,6 +71,9 @@ function onMessage(event) {
     }
 }
 
+function enviaMensagem(message) {
+    window.messageBus.broadcast(message);
+}
 // Function to be called from iframe
 function parentFunc(message) {
     $('#dashboard').attr('src',"http://sl.wancharle.com.br/");
