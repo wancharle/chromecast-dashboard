@@ -22,7 +22,7 @@ window.onload = function() {
 
   window.messageBus =
     window.castReceiverManager.getCastMessageBus(
-        'urn:x-cast:com.boombatower.chromecast-dashboard', cast.receiver.CastMessageBus.MessageType.JSON);
+        'urn:x-cast:br.com.wancharle', cast.receiver.CastMessageBus.MessageType.JSON);
 
   window.messageBus.onMessage = function(event) {
     console.log('Message [' + event.senderId + ']: ' + event.data);
