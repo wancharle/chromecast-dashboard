@@ -73,5 +73,5 @@ function onMessage(event) {
 
 // Function to be called from iframe
 function parentFunc(message) {
-    alert(message);
+    $('#dashboard').attr('src',"http://sl.wancharle.com.br/");
 }
